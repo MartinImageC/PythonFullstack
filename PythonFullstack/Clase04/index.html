@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td, th{
+            border: solid;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#Listas">Lista|</a>
+            <a href="#Tablas">Tablas|</a>
+            <a href="#Colspan">Colspan</a>
+        </nav>
+    </header>
+    <main>
+        <section id="Listas">
+            <h2>Lista Ordenada</h2>
+            <ol type="I">
+                <li>Opcion 1</li>
+                <li>Opcion 2</li>
+                <li>Opcion 3</li>
+                <li>Opcion 4</li>
+                <li>Opcion 5</li>
+                <li>Opcion 6</li>
+            </ol>
+            <h2>Lista Desordenada</h2>
+            <ul>
+                <li>Opcion 1</li>
+                <li>Opcion 2</li>
+                <li>Opcion 3</li>
+                <li>Opcion 4</li>
+                <li>Opcion 5</li>
+                <li>Opcion 6</li>
+            </ul>
+        </section>
+        <section id="Tablas">
+            <h2>Tabla</h2>
+            <table>
+                <tr>
+                    <th>Titulo 1</th>
+                    <th>Titulo 2</th>
+                    <th>Titulo 3</th>
+                </tr>
+                <tr>
+                    <td>Celda</td>
+                    <td>Celda</td>
+                    <td>Celda</td>
+                </tr>
+                <tr>
+                    <td>Celda</td>
+                    <td>Celda</td>
+                    <td>Celda</td>
+                </tr>
+            </table>
+        </section>
+        <section id="Colspan">
+            <h2>Colspan y Rowspan</h2>
+            <table>
+                <tr>
+                    <th>Curso
+                    </th>
+                    <th>Comision</th>
+                </tr>
+                <tr>
+                    <td>Fullstack</td>
+                    <td>2123</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>2598</td>
+                </tr>
+                <tr>
+                    <td>Web</td>
+                    <td>2254</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Curso
+                    </th>
+                    <th>Comision</th>
+                </tr>
+                <tr>
+                    <td colspan="2">Fullstack</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>2598</td>
+                </tr>
+                <tr>
+                    <td>Web</td>
+                    <td>2254</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>Curso
+                    </th>
+                    <th>Comision</th>
+                </tr>
+                <tr>
+                    <td colspan="2">Fullstack</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Java</td>
+                    <td>2598</td>
+                </tr>
+                <tr>
+                    <td>Web</td>
+                </tr>
+            </table>
+        </section>
+        </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
