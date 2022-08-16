@@ -1,0 +1,10 @@
+@font-face {
+    font-family: PacificAgain;
+    src: url(fonts/Pacific_Again.ttf) format('truetype');
+}
+
+h1{
+    font-family: PacificAgain;
+    color: pink;
+    font-size: 75px;
+}
