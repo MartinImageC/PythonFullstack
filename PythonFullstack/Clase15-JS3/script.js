@@ -57,5 +57,31 @@ console.log(nuevoArray);
 //let nuevoArray = [].concat(unArray, nuevoArray);
 //console.log(nuevoArray);
 
+let arrayNombre = ["juan","emi","maria","pedro","carlos"];
 
+arrayNombre.sort();
+console.log(arrayNombre);
 
+//let unArray = [11,2,3,22,54,6,78,98,9]
+//unArray.sort((a,b) => a - b);
+//console.log(unArray);
+
+//Analizar un array de string
+let email = "martin@gmail.com"
+
+if(email.includes("@")){
+    console.log("es un mail valido");
+}
+
+//cant de vocales
+let texto = "este es un texto"
+let vocales = "aeiou"
+let cont = 0;
+
+for (let i = 0; i <= texto.length; i++) {
+    if(vocales.includes([texto[i]])){
+        cont++;
+    }
+}
+
+console.log(cont);
