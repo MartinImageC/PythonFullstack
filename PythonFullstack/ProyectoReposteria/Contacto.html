@@ -12,10 +12,10 @@
 <body>
     <header>
         <div>
-                <a href="index.html">
-                    <img src="" align="left" alt="Repostería Nanos" class="logo-img" style="margin-left: 30%;">
-                    <h1>Repostería Nano's</h1>   
-                </a>
+            <a href="index.html">
+                <img src="" align="left" alt="Repostería Nanos" class="logo-img" style="margin-left: 30%;">
+                <h1>Repostería Nano's</h1>   
+            </a>
         </div>
         <nav>
             <a href="ProductosCake.html">Productos</a>
@@ -24,14 +24,13 @@
         </nav>
     </header>
     <main>
-        
-        <div>
+        <form action="" id = "formulario">
             <table>
                 <tr>
-                    <th rowspan="6">
+                    <td rowspan="5">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.62853548221!2d-58.388596684563204!3d-34.61355356552588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadbd6571307%3A0xeb83779b57ac2b92!2sAv.%20Belgrano%201428%2C%20C1076%20CABA!5e0!3m2!1ses!2sar!4v1660446669139!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </th>
-                    <th><input type="text" name="Nombre" placeholder="Nombre"/></th>
+                    </td>
+                    <td><input type="text" name="Nombre" placeholder="Nombre"/></td>
                 </tr>
                 <tr>
                     <td><input type="text" name="Apellido" placeholder="Apellido"/></td>
@@ -40,21 +39,25 @@
                     <td><input type="text" name="Telefono" size="9" maxlength="9" placeholder="Telefono"/></td>
                 </tr>
                 <tr>
-                    <td><input type="email" name="email" placeholder="E-mail"></td>
+                    <td><input type="email" name="email" placeholder="E-mail"  id = "cuenta"></td>
                 </tr>
                 <tr>
                     <td><textarea rows = "5" placeholder="Comentario... "></textarea></td>
                 </tr>
-            </table>
-        </div>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Entrar"></td>
+                </tr>
+            </table> 
+        </form>
     </main>
-    <footer style = "margin-top: 100px;">
-        <div style = "float:left; margin-left: 250px; border-color: greenyellow; border-style: groove; background-color: greenyellow;">
+    <footer>
+        <div id = "WhatsappButton">
             <i class="fa-brands fa-whatsapp"><a href="">Whatsapp</a></i>
         </div>
-        <div style = "float:right; margin-right: 250px; border-color: rgb(238, 179, 230); border-style: groove; background-color: rgb(238, 179, 230);">
+        <div id = "InstagramButton">
             <i class="fa-brands fa-instagram"><a href="https://www.instagram.com/reposteria_nanos/?hl=es-la">Instagram</a></i>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
