@@ -1,3 +1,6 @@
+html{
+    font-size: 62.5%;
+}
 
 @font-face {
     font-family: RisalahCinta;
@@ -7,28 +10,29 @@
 h1{
     font-family: RisalahCinta;
     color: pink;
-    font-size: 75px;
+    font-size: 7.5rem;
     margin-right: 25%;
 }
 
 body{
     text-align: center;
+    display: grid;
 }
 table{
-    border: 2px solid rgb(35, 80, 204);
+    border: 0.2rem solid rgb(35, 80, 204);
     margin: auto;
 }
 
 td{
-    padding: 10px;
-    width: 150px;
+    padding: 1rem;
+    width: 15rem;
     border:solid #3374FF; 
     background-color: #C5D3F1;
 }
 
 img{
-    height: 160px;
-    width: 160px;
+    height: 16rem;
+    width: 16rem;
 }
 
 .logo-img{
@@ -47,16 +51,16 @@ nav{
 
 #WhatsappButton{
     float:left;
-    margin-left: 250px;
-    padding: 1px;
-    border: 3px groove rgb(136, 219, 11); 
+    margin-left: 25rem;
+    padding: 1rem;
+    border: 3rem groove rgb(136, 219, 11); 
     background-color: greenyellow;
 }
 
 #InstagramButton{
     float:right;
-    margin-right: 250px;
-    padding: 1px; 
-    border: 3px groove rgb(221, 107, 206);  
+    margin-right: 25rem;
+    padding: 1rem; 
+    border: 3rem groove rgb(221, 107, 206);  
     background-color: rgb(238, 179, 230);
 }
