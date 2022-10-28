@@ -4,7 +4,7 @@
         font-size: 62.5%;
     } 
     body{
-        background-image: url(Imagenes/BackImage2.png);/*linear-gradient(rgb(250, 223, 227),white);*/
+        background-image: url(Imagenes/BackImage.png);/*linear-gradient(rgb(250, 223, 227),white);*/
         background-size: contain;
         justify-content: center;
     }
@@ -154,7 +154,7 @@
         font-size: 62.5%;
     } 
     body{
-        background-image: url(Imagenes/BackImage2.png);/*linear-gradient(rgb(250, 223, 227),white);*/
+        background-image: url(Imagenes/BackImage.png);/*linear-gradient(rgb(250, 223, 227),white);*/
         background-size: contain;
         justify-content: center;
     }
@@ -304,7 +304,7 @@
         font-size: 62.5%;
     } 
     body{
-        background-image: url(Imagenes/BackImage2.png);/*linear-gradient(rgb(250, 223, 227),white);*/
+        background-image: url(Imagenes/BackImage.png);/*linear-gradient(rgb(250, 223, 227),white);*/
         background-size: contain;
         justify-content: center;
     }
