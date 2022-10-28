@@ -3,101 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
     <link rel="stylesheet" href="Estilos.css">
+    <link rel="stylesheet" href="estilo3.css">
     <title>Reposteria Nanos</title>
     <script src="https://kit.fontawesome.com/ef3412a444.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../bootstrap-5.2.1-dist/css/bootstrap.css">
-    <style>
-         table{
-            border: 0.4rem solid coral;
-         }
-         td{
-            background-color: rgba(248, 189, 167, 0.877);
-            height: 10rem;
-            width: 10rem;
-        } 
-    </style>
 </head>
 <body>
     <header>
-        <section>
-            <a href="index.html">
-                <img src="" align="left" alt="Repostería Nanos" class="logo-img" style="margin-left: 30%;">
-                <h1>Repostería Nano's</h1> 
-            </a>    
-        </section>
-        <nav>
-            <a href="ProductosCake.html">Productos</a>
-            <a href="Galeria.html">Galería</a>
-            <a href="Contacto.html">Contacto</a>
-        </nav>
+        <div id="Header">
+            <div id="Titulo">
+                <img src="Imagenes/LogoRepo.png" alt="Repostería Nanos" class="logo-img">
+            </div>
+            <div id="navegador">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ProductosCake.html">Productos</a></li>
+                        <li><a href="Galeria.html">Galería</a></li>
+                        <li><a href="Contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
     <main>
-        <section>
-            <table>
-                <tr>
-                    <td>
-                        <img src="Imagenes/torta_1.jpg" alt="Foto Producto">
-                    </td>
-                    <td>
-                        <img src="Imagenes/torta_2.jpg" alt="Foto Producto">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="Imagenes/torta_3.jpg" alt="Foto Producto">
-                    </td>
-                    <td>
-                        <img src="Imagenes/torta_4.jpg" alt="Foto Producto">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="Imagenes/torta_5.jpg" alt="Foto Producto">
-                    </td>
-                    <td>
-                        <img src="Imagenes/torta_6.jpg" alt="Foto Producto">
-                    </td>
-                </tr>
-            </table>
-        </section>   
-        <section> 
-            <table>
-                <tr>
-                    <td>
-                        <img src="Imagenes/torta_7.jpg" alt="Foto Producto">
-                    </td>
-                    <td>
-                        <img src="Imagenes/torta_8.jpg" alt="Foto Producto">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="Imagenes/torta_9.jpg" alt="Foto Producto">
-                    </td>
-                    <td>
-                        <img src="Imagenes/torta_10.jpg" alt="Foto Producto">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="Imagenes/torta_11.jpg" alt="Foto Producto">
-                    </td>
-                    <td>
-                        <img src="Imagenes/torta_12.jpg" alt="Foto Producto">
-                    </td>
-                </tr>
-            </table>
+        <section id = "Galeria">
+            <div class = "Fotos">
+                <a href="ProductosCake.html"><img class = "classImg" src="Imagenes/torta_1.jpg" alt="Foto Producto"></a>
+                <a href="ProductosCake.html"><img class = "classImg" src="Imagenes/torta_2.jpg" alt="Foto Producto"></a>
+                <a href="ProductosCake.html"><img class = "classImg" src="Imagenes/torta_3.jpg" alt="Foto Producto"></a>
+                <a href="ProductosCake.html"><img class = "classImg" src="Imagenes/torta_4.jpg" alt="Foto Producto"></a>
+                <a href="ProductosCake.html"><img class = "classImg" src="Imagenes/torta_5.jpg" alt="Foto Producto"></a>
+                <a href="ProductosCake.html"><img class = "classImg" src="Imagenes/torta_6.jpg" alt="Foto Producto"></a>
+            </div>
+            <div class = "Fotos">
+               <a href="ProductosCake.html"><img class = "classImg" src="Imagenes/torta_7.jpg" alt="Foto Producto"></a>
+               <a href="ProductosCake.html"><img class = "classImg" src="Imagenes/torta_8.jpg" alt="Foto Producto"></a>
+               <a href="ProductosCake.html"><img class = "classImg" src="Imagenes/torta_9.jpg" alt="Foto Producto"></a>
+               <a href="ProductosCake.html"><img class = "classImg" src="Imagenes/torta_10.jpg" alt="Foto Producto"></a>
+               <a href="ProductosCake.html"><img class = "classImg" src="Imagenes/torta_11.jpg" alt="Foto Producto"></a>
+               <a href="ProductosCake.html"><img class = "classImg" src="Imagenes/torta_12.jpg" alt="Foto Producto"></a>
+            </div>          
         </section>
     </main>
     <footer>
-        <div id = "WhatsappButton">
-            <i class="fa-brands fa-whatsapp"><a href="">Whatsapp</a></i>
-        </div>
-        <div id = "InstagramButton">
-            <i class="fa-brands fa-instagram"><a href="https://www.instagram.com/reposteria_nanos/?hl=es-la">Instagram</a></i>
-        </div>
+        <section>
+            <div id="footer">
+                <div>
+                    <i class="fa-brands fa-whatsapp"><a href="">Whatsapp</a></i>
+                </div>
+                <div>
+                    <i class="fa-brands fa-instagram"><a href="https://www.instagram.com/reposteria_nanos/?hl=es-la">Instagram</a></i>
+                </div>
+            </div>
+        </section>
     </footer>
 </body>
 </html>
