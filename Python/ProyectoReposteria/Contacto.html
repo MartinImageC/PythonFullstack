@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="stylesheet" href="Estilos.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/ef3412a444.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../bootstrap-5.2.1-dist/css/bootstrap.css">
+</head>
+<body>
+    <header>
+        <div id="Header">
+            <div id="Titulo">
+                <img src="Imagenes/LogoRepo.png" alt="Repostería Nanos" class="logo-img">
+            </div>
+            <div id="navegador">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ProductosCake.html">Productos</a></li>
+                        <li><a href="Galeria.html">Galería</a></li>
+                        <li><a href="Contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id = "SectionForm">
+            <div id = "Form">
+                <form action="" id = "formulario" v-on:submit.prevent="ConfirmarCuenta">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre" name="Nombre"><br>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Apellido" name="Apellido"><br>
+                    <input type="tel" class="form-control" name="Telefono" size="9" maxlength="9" placeholder="11 1234-5678"/><br>
+                    <input type="text" class="form-control" id="cuenta" placeholder="name@example.com"><br>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="Comentario"></textarea><br>
+                    <div id="BotonC">
+                        <button type="submit" class="btn btn-outline-primary col-5">Cargar</button>
+                    </div>
+                </form>
+            </div>
+            <div id = "Map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.62853548221!2d-58.388596684563204!3d-34.61355356552588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccadbd6571307%3A0xeb83779b57ac2b92!2sAv.%20Belgrano%201428%2C%20C1076%20CABA!5e0!3m2!1ses!2sar!4v1660446669139!5m2!1ses!2sar" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div id="footer">
+                <div>
+                    <i class="fa-brands fa-whatsapp"><a href="">Whatsapp</a></i>
+                </div>
+                <div>
+                    <i class="fa-brands fa-instagram"><a href="https://www.instagram.com/reposteria_nanos/?hl=es-la">Instagram</a></i>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

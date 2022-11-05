@@ -1,0 +1,17 @@
+.flex-container{
+    width: 50vw;
+    height: 50vh;
+    background-color: coral;
+    display: flex;
+    /*eje principal*/
+    justify-content: space-evenly;
+    /*eje secundario*/
+    align-items: center;
+}
+
+.flex-item{
+    background-color: violet;
+    width: 15%;
+    height: 15%;
+    border: 1px solid black;
+}

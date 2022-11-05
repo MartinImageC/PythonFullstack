@@ -1,0 +1,48 @@
+h1{
+    color: brown !important; /*important -> mayor grado de importancia*/
+}
+
+h1{
+    color: aqua;
+}
+
+/*permite modificar alguna caracteristica a nivel general*/*{
+    margin: 0px;
+    box-sizing: border-box;  /*acumula todo el contenido sin modificar el tamaño de la caja
+    box-sizing: content-box; es la que viene por defecto.*/
+}
+/* 
+#titulo{
+    color: chartreuse; id -> tercer grado de importancia
+} 
+*/
+
+/*
+.titulo{
+    color: blueviolet; class -> cuarto grado de importancia
+}
+*/
+
+.margin{
+    background-color: cornflowerblue;
+    width: 200px;
+    height: 150px;
+    margin: 10px 5px 25px 15px; /*arriba, der, abajo, izq*/
+}
+
+.padding{
+    background-color: blue;
+    width: 200px;
+    height: 150px;
+    margin: 10px 5px 25px 15px;
+    padding: 30px 10px 5px 15px; /*arriba, der, abajo, izq*/
+}
+
+.border{
+    background-color: tomato;
+    width: 200px;
+    height: 150px;
+    margin: 10px 5px 25px 15px;
+    padding: 30px;
+    border: 20px solid darkgreen;
+}

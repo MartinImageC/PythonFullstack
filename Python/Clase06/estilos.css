@@ -1,0 +1,28 @@
+h1{
+    color: red !important;
+    /*si o si sera rojo */
+}
+span{
+    color:black;
+}
+#parrafo-unico{
+    color:aqua;
+}
+
+#elDiv{
+    color: black;
+    background-color: burlywood;
+    border-color: blue;
+    border-style: solid;
+    width: 70px;
+    margin-left: 30px;
+}
+.parrafo2{
+    font-size: 23px;
+}
+
+
+.parrafo{
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}/* .(nombre de clase) para clase */
