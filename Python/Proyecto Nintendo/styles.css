@@ -1,0 +1,705 @@
+/* Page */
+
+*{
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'museo-sans7';
+    src: url("fonts/MuseoSans_700.otf") format('opentype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "museo-sans3";
+    src: url("fonts/MuseoSans-300.otf") format('opentype');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "museo-sans5";
+    src: url("fonts/MuseoSans_500.otf") format('opentype');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "museo-sans1";
+    src: url("fonts/MuseoSans-100.otf") format('opentype');
+    font-style: normal;
+    font-weight: 100;
+}
+
+/* Etiquetas */
+
+html{
+   font-size: 62.5%;
+   font-family: "museo-sans5";
+   color: rgb(72, 72, 72);
+   line-height: 1.4;
+} 
+
+body{
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+main{
+    font-size: 1.7rem;
+    padding-top: 3rem;
+}
+
+h1{
+    font-family: "museo-sans7";
+}
+
+a{
+    text-decoration: none;  
+    float: left;
+    font-weight: bold;
+    color: rgb(72, 72, 72);
+}
+  
+a:hover{
+    color:red;
+}
+
+i{
+    padding-right: 1rem;
+    font-size: 1.8rem;
+}
+
+h4:hover{
+    color: red;
+    cursor: pointer;
+}
+
+footer a{
+    border-bottom-color: transparent;
+    line-height: 1.4;
+    font-family: "museo-sans7";
+    font-size: 1.2rem;
+    color: white;
+}
+
+footer a:hover{
+    color: white;
+}
+
+a .FooterRegion2:hover{
+    padding-bottom: 0px;
+    position: static;
+    margin: 0px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transition: border-bottom-color 200ms ease-in-out 25ms, color 200ms ease-in-out 50ms;
+}
+
+/* Id's */
+
+#header{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid rgb(199, 198, 198);
+}
+
+#Options{
+    display: grid;
+    grid-template-columns: 0.5fr 0.7fr 1fr;
+    grid-column-gap: 0.8rem;
+    padding-right: 2.3rem;
+    align-items: center;
+    font-family: "museo-sans7";
+    font-weight: 500;
+    font-size: 1.38rem;
+}
+
+#Categorias{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(72, 72, 72);
+    height: 3rem;
+    width: 45.5rem;
+    margin-left: 12rem;
+    padding-left: 1rem;
+    padding-top:1.2rem;
+    cursor: pointer;
+    font-family: 'museo-sans3';
+    font-weight:normal;
+    color: rgb(72, 72, 72);
+}
+
+#Search:hover{
+    color: red;
+}
+
+#Categorias:hover{
+    border-bottom-color: red;
+}
+
+#Categorias b:hover{
+    color: red;
+}
+
+#Logotipo{
+    width: 7rem;
+    height: 2rem;
+    margin: auto;
+    padding: 1.8rem;
+    padding-bottom: 1.4rem;
+    background-color: rgb(226, 19, 19);
+}
+
+#BotonInfo{
+    padding: 1.3rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    margin-left: 2rem;
+    background-color: rgb(226, 19, 19);
+    border-radius: 0.5rem;
+    border-color: transparent;
+    color: white;
+    font-family: 'museo-sans7';
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+#ImgPrincipal{
+    height: 50%;
+    width: 95%;
+    padding-top: 3rem;
+    padding: 2rem;
+    padding-left: 3.5rem;
+}
+
+#SeccionPri{
+    padding-left: 3rem;
+    position: absolute;
+    width: 97.8%;
+    z-index: -1;
+    height: calc(100% - 20.4rem);
+    background-image: linear-gradient(rgb(159, 145, 246), rgb(255, 220, 197));
+}
+
+#BotonInfo2{
+    align-self: baseline;
+    padding: 1.3rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    margin-left: 3rem;
+    background-color: rgb(226, 19, 19);
+    border-radius: 0.5rem;
+    border-color: transparent;
+    color: white;
+    font-family: 'museo-sans7';
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+#ESRB{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: auto;
+    margin-right: 0.7rem;
+}
+
+#Footer1{
+    padding-left: 1.8rem;
+    padding-right: 0.8rem;
+    padding: 3.3rem;
+    background-color: rgb(226, 19, 19);
+    display: grid;
+    grid-template-columns: 3fr 0.24fr 0fr;
+    align-items: center;
+}
+
+#Footer2{
+    padding: 3.3rem;
+    padding-left: 1.8rem;
+    padding-right: 0.8rem;
+    display: grid;
+    grid-template-columns: 3fr 1.4fr 0.6fr;
+    grid-column-gap: 2rem;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(36, 36, 36);
+    font-family: "museo-sans3";
+    font-size: 1.2rem;
+}
+
+#iconito{
+    font-size: 3.4rem;
+    color:white;
+}
+
+#Cartelera{
+    padding-right: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 0.1fr);
+    grid-template-rows: 1fr 0.6fr;
+    grid-column-gap: 3.2rem;
+    grid-row-gap: 5rem;
+}
+
+#BotonArticulos{
+    align-content: center;
+    padding: 1.3rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    margin-top: 2.5rem;
+    background-color: rgb(226, 19, 19);
+    border-radius: 0.5rem;
+    border-color: transparent;
+    color: white;
+    font-family: 'museo-sans7';
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+#BotonArticulos span{
+    margin-left: 1.5rem;
+}
+
+#BotonArticulos:hover{
+    transform: scale(1.03);
+    filter: brightness(80%);
+    transition: all .2s linear;
+}
+
+#MasVendidos{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+}
+
+#MasVendidos h1{
+    padding-right: 1.5rem;
+    margin-right: 1.5rem;
+    border-right: 0.1rem solid rgb(199, 198, 198);
+}
+
+#JuegosVendidos{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+#Lanzamientos{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+}
+
+/* Class */
+
+.Titulo{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-left: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 5rem;
+    margin: 0rem 3rem 0rem 0rem;
+    border-bottom: 0.1rem solid rgb(199, 198, 198);
+}
+
+.Icono{
+    width: 1.8rem;
+    height: 1.5rem;
+    padding-right: 0.7rem;
+}
+
+.Shop{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.ImgShop{
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.Titulo2{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    align-items: center;
+    padding-left: 3rem;
+    padding-bottom: 7rem;
+    margin: 0rem 0rem 4.8rem 0rem;
+    border-bottom: 0.1rem solid rgb(199, 198, 198);
+}
+
+.Cajita{
+    margin-right: 3.9rem;
+    border: 0.1rem solid rgb(199, 198, 198);
+    border-radius: 0.5rem;
+}
+
+.ImgShop:hover{
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.Hipervinc{
+    float:none;
+}
+
+.CajitaTitle{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-rows: 0.8fr;
+    grid-row-gap:3.5rem;
+    font-size: 1.4rem;
+    padding-left: 1.7rem;
+    margin-bottom: -7rem;
+}
+
+.CajitaSpan{
+    border-left: 2px solid red;
+    padding-left: 0.7rem;
+    font-family: 'museo-sans3';
+    font-weight:normal;
+    color: rgb(72, 72, 72) !important;
+}
+
+.Titulo3{
+    display: grid;
+    grid-template-rows: 0.2fr 2fr;
+    align-items: center;
+    padding-left: 10rem;
+    padding-bottom: 5rem;
+    margin: 0rem 0rem 2.5rem 0rem;
+    border-bottom: 0.1rem solid rgb(199, 198, 198);
+}
+
+.CajitaTienda{
+    background-image: url("https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.0/c_scale,w_1150/ncom/es_LA/merchandising/homepage-banners/4576x744_LATAM_GameStoreBanner_01_SP");
+    background-repeat: no-repeat;
+    height: 18.7rem;
+    margin-top: 3.3rem;
+    margin-right: 11.5rem;
+    border: 0.1rem solid rgb(199, 198, 198);
+}
+
+.CajitaConsolas{
+        background-image: url("https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.0/c_scale,w_1200/ncom/en_US/switch/site-design-update/switch-family-es");
+        background-repeat: no-repeat;
+        height: 52.5rem;
+        width: 92%;
+        margin-top: 3.3rem;
+        margin-right: 20rem;
+        border: 0.1rem solid rgb(199, 198, 198); 
+}
+
+.Mensaje{
+    font-family: 'museo-sans5';
+    margin-top: 4rem;
+    font-size: 2rem;
+    padding-right: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.FooterLinks a:hover{
+    padding-bottom: 0px;
+    position: static;
+    margin: 0px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    transition: border-bottom-color 200ms ease-in-out 25ms, color 200ms ease-in-out 25ms;
+}
+
+.ESRBDesc{
+    display:block;
+    font-family: "museo-sans3";
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-left: 1rem;
+    cursor:pointer;
+}
+
+.ESRBText{
+    padding-right: 3rem;
+    border-bottom: 1px solid rgb(72, 72, 72);
+}
+
+.ESRBText2{
+    line-height: 1.8rem;
+}
+
+.FooterLinks{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+}
+
+.FooterLinks a{
+    font-family: "museo-sans3";
+    font-weight: lighter;
+}
+
+.FooterRegion{
+    font-weight: lighter;
+    font-family: "museo-sans3";
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Noticia{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.TituloNovedad{
+    margin: 1rem 0rem 2rem 0rem;
+    font-size: 1.5rem;
+    font-family: "museo-sans7";
+}
+
+.TituloNovedad2{
+    margin: 1rem 0rem 2rem 0rem;
+    padding-right: 3.5rem;
+    font-size: 1.5rem;
+    font-family: "museo-sans7";
+}
+
+.TituloNovedad3{
+    margin: 1rem 0rem 2rem 0rem;
+    padding-right: 3.5rem;
+    font-size: 1.3rem;
+    font-family: "museo-sans7";
+}
+
+.fecha, .fecha:hover{
+    text-decoration: none !important;
+    color: rgb(110, 110, 110);
+    font-family: "museo-sans3";
+    font-weight: 100;
+    padding-top: 0.6rem;
+    margin: 1rem 0rem 1rem 0rem;
+}
+
+.texto, .texto:hover{
+    text-decoration: none !important;
+    color: rgb(72, 72, 72);
+    font-family: "museo-sans1";
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: lighter;
+    margin: 3rem 2rem 1rem 0rem;
+}
+
+.ImagenNoticia{
+    background-image: url("https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_600/ncom/en_US/articles/2022/power-up-these-sports-to-a-different-level/2250x1266_Ncom_ArcadeSports_SP");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 56rem;
+    height: 32rem;
+    border-radius: 0.5rem;
+}
+
+.ImagenNoticia2{
+    background-image: url("https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_600/ncom/en_US/articles/2022/move-to-the-groove-in-just-dance-2023-edition-available-now/1280x720_Switch_News_JD23");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 56rem;
+    height: 32rem;
+    border-radius: 0.5rem;
+}
+
+.ImagenNoticia:hover, .ImagenNoticia2:hover , .ImagenNoticia3:hover, .ImagenNoticia4:hover, .ImagenNoticia5:hover, .ImagenNoticia6:hover{
+    filter: brightness(75%);
+    transition:all .3s ease-in-out;
+}
+
+.MoreInfo{
+    padding-top: 2rem;
+    color: red;
+    width: fit-content;
+    font-family: "museo-sans7";
+    border-bottom: 2px solid rgb(230, 0, 18);
+}
+
+.MoreInfo:hover{
+    color: rgb(161, 15, 15);
+    border-bottom-color: rgb(161, 15, 15);
+}
+
+.ContainerFlex{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:center;
+}
+
+.ImagenNoticia3{
+    background-image: url("https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_300/ncom/en_US/merchandising/Sales%20and%20Deals/2022/001-NOA/Cyber%20Deals/03-ES/2400x1350_CyberDeals_Ncom_WhatsNew_Banner_SP");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 26rem;
+    height: 15rem;
+    border-radius: 0.5rem;
+}
+.ImagenNoticia4{
+    background-image: url("https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_300/ncom/en_US/articles/2022/pokemon-scarlet-and-pokemon-violet-are-finally-here/2250x1266_EN");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 26rem;
+    height: 15rem;
+    border-radius: 0.5rem;
+}
+.ImagenNoticia5{
+    background-image: url("https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_300/ncom/en_US/articles/2022/nintendo-switch-sports-weekly-items/20221118/NSS_Items_Week31_ES");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 26rem;
+    height: 15rem;
+    border-radius: 0.5rem;
+}
+.ImagenNoticia6{
+    background-image: url("https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.0/c_scale,w_300/ncom/en_US/articles/2022/anime-worlds-come-alive-in-these-stylish-games/2250x1266_Anime_SP");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 26rem;
+    height: 15rem;
+    border-radius: 0.5rem;
+}
+
+.BasicNotice{
+    margin-right: 3.5rem;
+}
+
+.BasicNotice4{
+    margin-right: 0.7rem;
+}
+
+.Titulo4{
+    display: grid;
+    grid-template-rows: 0.2fr 2fr;
+    align-items: center;
+    padding-left: 10rem;
+    padding-bottom: 5rem;
+    margin: 0rem 0rem 2.5rem 0rem;
+}
+
+.Titulo5{
+    display: grid;
+    grid-template-rows: 0.2fr 2fr;
+    align-items: center;
+    padding-left: 10rem;
+    padding-bottom: 5rem;
+    margin: 0rem 0rem 2rem 0rem;
+}
+
+.MoreInfo2{
+    color: red;
+    width: fit-content;
+    font-family: "museo-sans7";
+    border-bottom: 2px solid rgb(230, 0, 18);
+}
+
+.MoreInfo2:hover{
+    color: rgb(161, 15, 15);
+    border-bottom-color: rgb(161, 15, 15);
+}
+
+.ImgSold{
+    width: 26rem;
+    height: 13.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.ImgSold:hover{
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+
+.CajitaSold{
+    margin-right: 3.9rem;
+    padding-bottom: 9rem;
+    border: 0.1rem solid rgb(199, 198, 198);
+    border-radius: 0.5rem;
+}
+
+.CajitaSoldTitle{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-rows: 0.8fr;
+    grid-row-gap: 1rem;
+    font-size: 1.3rem;
+    font-family: "museo-sans7";
+    padding-left: 1.7rem;
+    margin-bottom: -7rem;
+}
+
+.CajitaSoldTitle h3{
+    margin-bottom: 5rem;
+}
+
+.CajitaSoldLast{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-rows: 0.8fr;
+    grid-row-gap: 1rem;
+    font-size: 1.3rem;
+    font-family: "museo-sans7";
+    padding-left: 1.7rem;
+    margin-bottom: -7rem;
+}
+
+.CajitaSoldLast h3{
+    margin-bottom: 3rem;
+}
+
+.Precio h3, .Precio h3:hover{
+    color: rgb(72, 72, 72);
+    margin-bottom: 0rem;
+
+}
+
+.New{
+    text-align: center;
+    margin: auto;
+    margin-left: 0rem;
+    padding: 0px 0.8rem;
+    padding-bottom: 0.2rem;
+    background-color: rgb(226, 19, 19);
+    border-radius: 0.5rem;
+    border-color: transparent;
+    color: white;
+    font-family: 'museo-sans7';
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
